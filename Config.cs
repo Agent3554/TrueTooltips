@@ -1,0 +1,144 @@
+﻿using Microsoft.Xna.Framework;
+using System.ComponentModel;
+using Terraria.ModLoader.Config;
+namespace TrueTooltips
+{
+    class Config : ModConfig
+    {
+        [Header("[c/ffff00:Custom Tooltip Lines]")]
+
+        [DefaultValue(true)]
+        [Label("Ammo Line")]
+        public bool f0;
+
+        [DefaultValue(true)]
+        [Label("Better Knockback Line")]
+        public bool f1;
+
+        [DefaultValue(true)]
+        [Label("Better Price Line")]
+        public bool f2;
+
+        [DefaultValue(true)]
+        [Label("Better Speed Line")]
+        public bool f3;
+
+        [DefaultValue(true)]
+        [Label("Mod Name under Item Name")]
+        public bool f4;
+
+        [DefaultValue(true)]
+        [Label("Weapon + Ammo Crit")]
+        public bool f5;
+
+        [DefaultValue(true)]
+        [Label("Weapon + Ammo Damage")]
+        public bool f6;
+
+        [DefaultValue(true)]
+        [Label("Weapon + Ammo Knockback")]
+        public bool f7;
+
+        [Header("[c/ffff00:Vanilla Tooltip Lines]")]
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color Ammo;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color AxePower;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color BaitPower;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color BuffTime;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color Consumable;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color CritChance;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color Damage;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color Defense;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color Equipable;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color EtherianManaWarning;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color Expert;
+
+        [DefaultValue(typeof(Color), "255,255,255,0")]
+        public Color Favorite;
+
+        [DefaultValue(typeof(Color), "255,255,255,0")]
+        public Color FavoriteDesc;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color FishingPower;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color HammerPower;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color HealLife;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color HealMana;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color Knockback;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color Material;
+
+        [DefaultValue(typeof(Color), "255,255,255,0")]
+        public Color NeedsBait;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color PickPower;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color Placeable;
+
+        [DefaultValue(typeof(Color), "255,255,255,0")]
+        public Color Quest;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color SetBonus;
+
+        [DefaultValue(typeof(Color), "255,255,255,0")]
+        public Color Social;
+
+        [DefaultValue(typeof(Color), "255,255,255,0")]
+        public Color SocialDesc;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color SpecialPrice;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color Speed;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color TileBoost;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color UseMana;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color Vanity;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color WandConsumes;
+
+        [DefaultValue(typeof(Color), "255,255,255,255")]
+        public Color WellFedExpert;
+        public override ConfigScope Mode => ConfigScope.ClientSide;
+    }
+}

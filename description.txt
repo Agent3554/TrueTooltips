@@ -1,0 +1,23 @@
+
+A fully customizable Tooltip Enhancing Mod.
+
+
+[c/ffff00:Features]
+
+- Change the Color of- or turn off most Vanilla Tooltip Lines. Set the Alpha Value to 0 to turn a Vanilla Line off.
+
+- Ammo Line : Shows the Item's Ammo's Amount, Name, Rarity, and Mod if "Mod Name under Item Name" is on.
+
+- Better Knockback Line : Shows Knockback as a Number. Replaces Vanilla Knockback Line.
+
+- Better Price Line : Always visible, better Color Coding, cleaner. Replaces Vanilla Price Line.
+
+- Better Speed Line : Shows Uses per Second. Replaces Vanilla Speed Line.
+
+- "Mod Name under Item Name" : Show the Mod that adds the Item under the Item's Name.
+
+- "Weapon + Ammo Crit" : Show Weapon + Ammo Crit Chance for Weapons that have Ammo.
+
+- "Weapon + Ammo Damage" : Same as above for Damage.
+
+- "Weapon + Ammo Knockback" : Same as above for Knockback. Only works with Better Knockback Line.
