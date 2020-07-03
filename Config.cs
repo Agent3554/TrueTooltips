@@ -9,35 +9,35 @@ namespace TrueTooltips
 
         [DefaultValue(true)]
         [Label("Ammo Line")]
-        public bool f0;
+        public bool al;
 
         [DefaultValue(true)]
         [Label("Better Knockback Line")]
-        public bool f1;
+        public bool bkl;
 
         [DefaultValue(true)]
         [Label("Better Price Line")]
-        public bool f2;
+        public bool bpl;
 
         [DefaultValue(true)]
         [Label("Better Speed Line")]
-        public bool f3;
+        public bool bsl;
 
         [DefaultValue(true)]
         [Label("Mod Name under Item Name")]
-        public bool f4;
+        public bool mn;
 
         [DefaultValue(true)]
         [Label("Weapon + Ammo Crit")]
-        public bool f5;
+        public bool wac;
 
         [DefaultValue(true)]
         [Label("Weapon + Ammo Damage")]
-        public bool f6;
+        public bool wad;
 
         [DefaultValue(true)]
         [Label("Weapon + Ammo Knockback")]
-        public bool f7;
+        public bool wak;
 
         [Header("[c/ffff00:Vanilla Tooltip Lines]")]
 
