@@ -62,7 +62,7 @@ namespace TrueTooltips
             if (l8 != null)
             {
                 if (0 < ca.damage && 0 < item.useAmmo && ci.wad) l8.text = l8.text.Replace(l8.text.Split(' ').First(), lp.GetWeaponDamage(ca) + lp.GetWeaponDamage(item) + "");
-                l8.overrideColor = ci.Damage;
+                if (ModLoader.GetMod("_ColoredDamageTypes") == null) l8.overrideColor = ci.Damage;
             }
             int CC(Item _)
             {
