@@ -21,3 +21,5 @@ A fully customizable Tooltip Enhancing Mod.
 - "Weapon + Ammo Damage" : Same as above for Damage.
 
 - "Weapon + Ammo Knockback" : Same as above for Knockback. Only works with Better Knockback Line.
+
+- Adds a Background to Tooltips.

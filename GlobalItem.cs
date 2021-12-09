@@ -4,10 +4,18 @@ using System.Linq;
 using System;
 using Terraria.ModLoader;
 using Terraria;
+using System.Collections.ObjectModel;
 namespace TrueTooltips
 {
     class GlobalItem0 : GlobalItem
     {
+        public override bool PreDrawTooltip(Item item, ReadOnlyCollection<TooltipLine> tl, ref int x, ref int y)
+        {
+            var bc = ModContent.GetInstance<Config>().bc;
+
+            if (0 < bc.A) Utils.DrawInvBG(Main.spriteBatch, new Rectangle(x - 10, y - 10, (int)tl.Select(_ => _.text).Max(_ => Main.fontMouseText.MeasureString(_).X) + 20, (int)tl.Select(_ => _.text).Sum(_ => Main.fontMouseText.MeasureString(_).Y) + 15), new Color(bc.R * bc.A / 255, bc.G * bc.A / 255, bc.B * bc.A / 255, bc.A));
+            return base.PreDrawTooltip(item, tl, ref x, ref y);
+        }
         public override void ModifyTooltips(Item item, System.Collections.Generic.List<TooltipLine> tl)
         {
             var ca = new Item();
@@ -51,7 +59,7 @@ namespace TrueTooltips
             }
             if (l29 != null)
             {
-                if (ci.bsl) l29.text = Math.Round(60 / (((item.melee ? lp.meleeSpeed : 1) * item.useTime) + item.reuseDelay), 2) + " uses per second";
+                if (ci.bsl) l29.text = Math.Round(60 / (((item.melee ? lp.meleeSpeed : 1) * item.useAnimation) + item.reuseDelay), 2) + " uses per second";
                 l29.overrideColor = ci.Speed;
             }
             if (l7 != null)

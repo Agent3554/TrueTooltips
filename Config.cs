@@ -5,6 +5,12 @@ namespace TrueTooltips
 {
     class Config : ModConfig
     {
+        [Header("[c/ffff00:Background]")]
+
+        [DefaultValue(typeof(Color), "63,81,151,255")]
+        [Label("Background Color")]
+        public Color bc;
+
         [Header("[c/ffff00:Custom Tooltip Lines]")]
 
         [DefaultValue(true)]
