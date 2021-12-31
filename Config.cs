@@ -5,45 +5,56 @@ namespace TrueTooltips
 {
     class Config : ModConfig
     {
-        [Header("[c/ffff00:Background]")]
-
-        [DefaultValue(typeof(Color), "63,81,151,255")]
-        [Label("Background Color")]
-        public Color bc;
-
         [Header("[c/ffff00:Custom Tooltip Lines]")]
 
-        [DefaultValue(true)]
         [Label("Ammo Line")]
+        [Tooltip("Shows the Item's Ammo's Name, Amount and Rarity and shows the Mod that adds the Ammo under the Ammo's Name if \"Mod Name under Item Name\" is on.")]
+        [DefaultValue(true)]
         public bool al;
 
-        [DefaultValue(true)]
-        [Label("Better Knockback Line")]
-        public bool bkl;
-
-        [DefaultValue(true)]
         [Label("Better Price Line")]
+        [Tooltip("Correct Sell Price for Items with Custom Price, always visible, better Color Coding, cleaner. Replaces Vanilla Price Line.")]
+        [DefaultValue(true)]
         public bool bpl;
 
-        [DefaultValue(true)]
         [Label("Better Speed Line")]
+        [Tooltip("Shows Uses per Second. Replaces Vanilla Speed Line.")]
+        [DefaultValue(true)]
         public bool bsl;
 
+        [Label("Better Knockback Line")]
+        [Tooltip("Shows Knockback as a Number. Replaces Vanilla Knockback Line.")]
         [DefaultValue(true)]
-        [Label("Mod Name under Item Name")]
-        public bool mn;
+        public bool bkl;
 
+        [Label("Combine Weapon and Ammo Damage")]
         [DefaultValue(true)]
-        [Label("Weapon + Ammo Crit")]
-        public bool wac;
-
-        [DefaultValue(true)]
-        [Label("Weapon + Ammo Damage")]
         public bool wad;
 
+        [Label("Combine Weapon and Ammo Crit")]
         [DefaultValue(true)]
-        [Label("Weapon + Ammo Knockback")]
+        public bool wac;
+
+        [Label("Combine Weapon and Ammo Knockback")]
+        [DefaultValue(true)]
         public bool wak;
+
+        [Label("Mod Name under Item Name")]
+        [Tooltip("Shows the Mod that adds the Item under the Item's Name.")]
+        [DefaultValue(true)]
+        public bool mn;
+
+        [Header("[c/ffff00:Background Color]")]
+
+        [Label("")]
+        [DefaultValue(typeof(Color), "63,81,151,255")]
+        public Color bc;
+
+        [Header("[c/ffff00:Text Pulse]")]
+
+        [Label("")]
+        [DefaultValue(false)]
+        public bool tp;
 
         [Header("[c/ffff00:Vanilla Tooltip Lines]")]
 
@@ -145,6 +156,7 @@ namespace TrueTooltips
 
         [DefaultValue(typeof(Color), "255,255,255,255")]
         public Color WellFedExpert;
+
         public override ConfigScope Mode => ConfigScope.ClientSide;
     }
 }
